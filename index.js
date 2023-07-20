@@ -72,6 +72,7 @@ app.get('/api/matches', async (req, res) => {
   res.json(matches);
 });
 app.get('/ping', async (req, res) => {
+  console.log("i am running ")
   res.status(200).json({
     success:true,
     message:"Iam running"
@@ -81,4 +82,5 @@ app.get('/ping', async (req, res) => {
 const port = 3000;
 app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`);
+  console.log("haris")
 });
