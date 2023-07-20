@@ -71,7 +71,12 @@ app.get('/api/matches', async (req, res) => {
 
   res.json(matches);
 });
-
+app.get('/ping', async (req, res) => {
+  res.status(200).json({
+    success:true,
+    message:"Iam running"
+  })
+})
 // Run the web application
 const port = 3000;
 app.listen(port, () => {
